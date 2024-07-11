@@ -5,3 +5,62 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* Generics */
+body {
+    background-color: #b4d0e7;
+    font-family: 'Open Sans';
+}
+
+header {
+    background-color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Utilities */
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    background-color: #0061ff;
+    color: white;
+    padding: 4px 12px;
+}
+
+/* Header */
+.navbar.flex {
+    height: 80px;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 13px;
+}
+
+.header-left.flex-center,
+.card-links-lft.flex,
+.card-links-rgt.flex {
+    gap: 40px;
+}
+
+.card-links-rgt.flex {
+    margin-right: 20px;
+}
+
