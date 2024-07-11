@@ -8,7 +8,6 @@
 
 /* Generics */
 body {
-    background-color: #b4d0e7;
     font-family: 'Open Sans';
 }
 
@@ -23,6 +22,7 @@ ul {
 a {
     text-decoration: none;
     color: black;
+    display: inline-block;
 }
 
 img {
@@ -31,6 +31,11 @@ img {
 }
 
 /* Utilities */
+.container-lg {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
 .flex {
     display: flex;
 }
@@ -43,8 +48,12 @@ img {
 .btn {
     background-color: #0061ff;
     color: white;
-    padding: 4px 12px;
+    padding: 5px 12px;
 }
+
+.mb-20 {
+    margin-bottom: 20px;
+ }
 
 /* Header */
 .navbar.flex {
@@ -68,3 +77,37 @@ img {
     height: 20px;
 }
 
+/* Hero */
+
+.hero {
+    background-color: #b4d0e7;
+    padding: 50px 0 10px 0;
+    font-size: 13px;
+}
+
+.hero h1{
+    font-size: 52px;
+    font-weight: 800;
+    margin-bottom: -30px;
+}
+
+.hero-image {
+    height: 400px;
+    position: relative;
+    top: 70px;
+    left: 0;
+}
+
+.text-hero {
+    flex-basis: 30%;
+    padding-top: 70px;
+    position: relative;
+}
+
+
+
+.fas.fa-arrow-down {
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+}
