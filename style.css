@@ -30,6 +30,11 @@ img {
     max-width: 100%;
 }
 
+main h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
 /* Utilities */
 .container-lg {
     max-width: 1200px;
@@ -193,10 +198,6 @@ img {
     padding: 20px;
 }
 
-.col-body h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
 
 .col-body .prices {
     margin-bottom: 40px;
@@ -244,5 +245,25 @@ img {
 .col-body.row .btn {
     flex-basis: 30%;
     margin-bottom: 10px;
-    
+}
+
+/* Partners */
+
+section.partner {
+    padding: 50px 0;
+}
+
+.container-image {
+    flex-basis: 70%;
+}
+
+.partner-text {
+    flex-basis: 30%;
+    padding: 30px;
+}
+
+.partner-text .btn {
+    background-color: white;
+    color: black;
+    border: 1px solid currentColor;
 }
