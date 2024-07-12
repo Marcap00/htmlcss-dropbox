@@ -1,5 +1,4 @@
 /* Css Reset */
-
 * {
     padding: 0;
     margin: 0;
@@ -23,7 +22,7 @@ ul {
 a {
     text-decoration: none;
     color: black;
-    display: inline-block;
+    
 }
 
 img {
@@ -42,6 +41,24 @@ img {
     margin: 0 auto;
 }
 
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+    /* Buttons */
+
+.btn {
+    background-color: #0061ff;
+    color: white;
+    padding: 5px 12px;
+    display: inline-block;
+}
+
+    /* Layout */
 .flex {
     display: flex;
 }
@@ -51,14 +68,22 @@ img {
     align-items: center;
 }
 
-.btn {
-    background-color: #0061ff;
-    color: white;
-    padding: 5px 12px;
+.row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.mb-20 {
-    margin-bottom: 20px;
+.row.cols-3 > .col {
+    flex-basis: calc(100% / 3 - 80px / 3);
+    border: 1px solid lightgray;
+}
+
+.row.cols-3 {
+    gap: 40px;
+}
+
+.row.grow > * {
+    flex-grow: 1;
 }
 
 /* Header */
@@ -84,7 +109,6 @@ img {
 }
 
 /* Hero */
-
 .hero {
     background-color: #b4d0e7;
     padding: 50px 0 10px 0;
@@ -117,7 +141,7 @@ img {
 
 /* Business plans section */
 .plans-business {
-    padding-top: 100px;
+    padding: 100px 0 50px 0;
 }
 
 .plans-business h2 {
@@ -126,6 +150,9 @@ img {
 }
 
 /* Fake Buttons */
+.fake-buttons {
+    margin-bottom: 40px;
+}
 
 .billing::before {
     content: '';
@@ -145,7 +172,77 @@ img {
 }
 
 .billing {
-    vertical-align: middle;
     margin-right: 20px;
 } 
+
     
+/* Plans */
+
+/* Column */
+.plans.business .col {
+    border: 1px solid lightgray;
+}
+
+.col-header {
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+    padding: 10px 0;
+}
+
+.plans-business .col-body {
+    padding: 20px;
+}
+
+.col-body h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.col-body .prices {
+    margin-bottom: 40px;
+}
+
+.col-body .features li {
+    height: 40px;
+}
+
+.col-body .btn {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.col-body .buy-now {
+    text-decoration: underline;
+    color: #0000EE;
+}
+
+.splitter {
+    border-bottom: 1px solid lightgray;
+    margin: 30px 0;
+    width: 30%;
+}
+
+/* Row */
+.col-body.row {
+    align-items: flex-start;
+}
+
+.col-body.row .left-side {
+    flex-basis: 70%;
+}
+
+.col-body.row .right-side {
+    flex-basis: 30%;
+    padding-left: 25px;
+}
+
+.left-side ul {
+    margin-bottom: 40px;
+}
+
+.col-body.row .btn {
+    flex-basis: 30%;
+    margin-bottom: 10px;
+    
+}
