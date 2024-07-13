@@ -25,9 +25,23 @@ a {
     
 }
 
+a.default-link {
+    text-decoration: underline;
+    color: #0000EE;
+}
+
 img {
     display: block;
     max-width: 100%;
+}
+
+section{
+    padding: 60px 0;
+}
+
+h2 {
+   font-size: 28px;
+   margin-bottom: 40px;
 }
 
 main h3 {
@@ -80,7 +94,7 @@ main h3 {
 
 .row.cols-3 > .col {
     flex-basis: calc(100% / 3 - 80px / 3);
-    border: 1px solid lightgray;
+   
 }
 
 .row.cols-3 {
@@ -146,13 +160,9 @@ main h3 {
 
 /* Business plans section */
 .plans-business {
-    padding: 100px 0 50px 0;
+    padding: 100px 0 60px 0;
 }
 
-.plans-business h2 {
-    font-size: 28px;
-    margin-bottom: 40px;
-}
 
 /* Fake Buttons */
 .fake-buttons {
@@ -184,7 +194,7 @@ main h3 {
 /* Plans */
 
 /* Column */
-.plans.business .col {
+.plans-business .col {
     border: 1px solid lightgray;
 }
 
@@ -213,10 +223,6 @@ main h3 {
     margin-bottom: 20px;
 }
 
-.col-body .buy-now {
-    text-decoration: underline;
-    color: #0000EE;
-}
 
 .splitter {
     border-bottom: 1px solid lightgray;
@@ -249,9 +255,6 @@ main h3 {
 
 /* Partners */
 
-section.partner {
-    padding: 50px 0;
-}
 
 .container-image {
     flex-basis: 70%;
