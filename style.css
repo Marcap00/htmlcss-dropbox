@@ -6,6 +6,10 @@
 }
 
 /* Generics */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Open Sans';
     font-size: 13px;
@@ -70,6 +74,7 @@ footer {
     margin: 0 auto;
 }
 
+    /* Margin Bottom */
 .mb-20 {
     margin-bottom: 20px;
 }
@@ -102,8 +107,17 @@ footer {
     color: white;
     padding: 5px 12px;
     display: inline-block;
+    border-radius: 2px;
 }
 
+.btn:hover {
+    background-color: #3580fa;
+    scale: 1.05;
+}
+
+.btn:active {
+    scale: 1;
+}
     /* Layout */
 .flex {
     display: flex;
@@ -203,6 +217,7 @@ footer {
     height: 20px;
 }
 
+
 /* Main */
 
 /* Hero */
@@ -234,13 +249,22 @@ footer {
     position: absolute;
     bottom: 0;
     left: 0; 
+    filter: drop-shadow(0 0 5px #fff);
 }
+
+.fas.fa-arrow-down:hover {
+    scale: 1.1;
+}
+
+.fas.fa-arrow-down:active {
+    scale: 1;
+}
+
 
 /* Business plans section */
-.plans-business {
+#plans-business {
     padding: 120px 0 60px 0;
 }
-
 
 /* Fake Buttons */
 .fake-buttons {
@@ -268,11 +292,10 @@ footer {
     margin-right: 20px;
 } 
 
-    
 /* Plans */
 
 /* Column */
-.plans-business .col {
+#plans-business .col {
     border: 1px solid lightgray;
 }
 
@@ -282,7 +305,7 @@ footer {
     padding: 10px 0;
 }
 
-.plans-business .col-body {
+#plans-business .col-body {
     padding: 20px;
 }
 
@@ -365,6 +388,9 @@ section.teams {
     padding: 80px;
 }
 
+.teams figure:hover {
+    border: 10px solid rgba(211, 211, 211, 0.5);
+}
 
 .col.middle {
     padding: 40px;
