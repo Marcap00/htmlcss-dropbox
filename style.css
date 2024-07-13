@@ -22,7 +22,6 @@ ul {
 a {
     text-decoration: none;
     color: black;
-    
 }
 
 a.default-link {
@@ -100,7 +99,6 @@ main h3 {
 
 .row.cols-3 > .col {
     flex-basis: calc(100% / 3 - 80px / 3);
-   
 }
 
 .row.cols-3 {
@@ -113,7 +111,42 @@ main h3 {
 
 .row.cols-2 > .col {
     flex-basis: calc(100% / 2);
-    
+}
+
+    /* Background */
+.bg-green{
+    background-color: #a2d39b;
+}
+
+.bg-brightred{
+    background-color: #ff1c1c;
+}
+
+.bg-red{
+    background-color: #d5001f;
+}
+.bg-lightblue{
+    background-color: #b4d0e7;
+}
+
+.bg-blue{
+    background-color: #0093ce;
+}
+
+.bg-darkblue{
+    background-color: #0d2481;
+}
+
+.bg-yell{
+    background-color: #ffd830;
+}
+
+.bg-bordeaux{
+    background-color: #61082b;
+}
+
+.bg-lightgrey {
+    background-color: #f5f5f5;
 }
 
 /* Header */
@@ -283,13 +316,31 @@ main h3 {
 }
 
 /* Teams */
+section.teams {
+    padding: 60px 0 0 0;
+}
+
 .teams .row.cols-3 {
     gap: 0;
 }
 
 .teams .row.cols-3 > .col {
     flex-basis: calc(100% / 3);
-   
 }
 
+.teams figure {
+    height: 280px;
+    padding: 60px;
+}
 
+.col.middle {
+    padding: 40px;
+}
+
+.image-col-middle img {
+    height: 100px;
+}
+
+.teams figure img {
+    filter: invert(1);
+}
