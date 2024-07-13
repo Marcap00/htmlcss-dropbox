@@ -84,6 +84,12 @@ main h3 {
 
 .flex-center {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-align-center {
+    display: flex;
     align-items: center;
 }
 
@@ -105,6 +111,11 @@ main h3 {
     flex-grow: 1;
 }
 
+.row.cols-2 > .col {
+    flex-basis: calc(100% / 2);
+    
+}
+
 /* Header */
 .navbar.flex {
     height: 80px;
@@ -113,7 +124,7 @@ main h3 {
     font-size: 13px;
 }
 
-.header-left.flex-center,
+.header-left.flex-align-center,
 .card-links-lft.flex,
 .card-links-rgt.flex {
     gap: 40px;
@@ -270,3 +281,15 @@ main h3 {
     color: black;
     border: 1px solid currentColor;
 }
+
+/* Teams */
+.teams .row.cols-3 {
+    gap: 0;
+}
+
+.teams .row.cols-3 > .col {
+    flex-basis: calc(100% / 3);
+   
+}
+
+
