@@ -151,9 +151,7 @@ footer {
     flex-grow: 1;
 }
 
-.row.cols-2 > .col {
-    flex-basis: calc(100% / 2);
-}
+
 
 .row.cols-5 > .col {
     flex-basis: calc(100% / 5);
@@ -266,11 +264,7 @@ footer {
     padding: 120px 0 60px 0;
 }
 
-/* Fake Buttons */
-.fake-buttons {
-    margin-bottom: 40px;
-}
-
+/* Fake radio buttons */
 .billing::before {
     content: '';
     display: inline-block;
@@ -307,11 +301,6 @@ footer {
 
 #plans-business .col-body {
     padding: 20px;
-}
-
-
-.col-body .prices {
-    margin-bottom: 40px;
 }
 
 .col-body .features li {
@@ -376,20 +365,24 @@ section.teams {
 }
 
 .teams .row.cols-3 > .col {
-    flex-basis: calc(100% / 3);
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+    flex-grow: 1;
 }
 
-.teams figure {
-    height: 280px;
-    padding: 60px;
+.row.cols-2 > .col {
+    height: 50%;
+    width: 50%;
+    border: 15px solid transparent;
 }
 
-.teams figure.p-100 {
-    padding: 80px;
+.row.cols-2 > .col img {
+    width: 60%;
+    filter: invert(1);
 }
 
-.teams figure:hover {
-    border: 10px solid rgba(211, 211, 211, 0.5);
+.row.cols-2 > .col:hover {
+    border: 15px solid rgba(255, 255, 255, 0.5);
 }
 
 .col.middle {
@@ -397,11 +390,7 @@ section.teams {
 }
 
 .image-col-middle img {
-    height: 100px;
-}
-
-.teams figure img {
-    filter: invert(1);
+    width: 80%;
 }
 
 .teams-conclusion .wrapper.flex {
