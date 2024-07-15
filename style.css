@@ -313,6 +313,15 @@ footer {
     margin-bottom: 20px;
 }
 
+.fa-ul {
+    list-style-type: none;
+    margin-left: var(--fa-li-margin, 1.5em);
+    padding-left: 0;
+}
+
+.fa-solid.fa-check {
+    color: #0061ff;
+}
 
 /* Row */
 .col-body.row {
